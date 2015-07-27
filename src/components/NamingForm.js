@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-export default React.createClass({
-  render: function() {
+export default class NamingForm extends React.Component {
+  render () {
     return (
       <div className="col-md-5">
           <div id="naming-form">
@@ -26,4 +26,4 @@ export default React.createClass({
       </div>
     );
   }
-});
+}

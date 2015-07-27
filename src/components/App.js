@@ -1,10 +1,10 @@
-var React = require('react');
-
 import EntryContainer from './EntryContainer';
 import NamingForm from './NamingForm';
 
-export default React.createClass({
-  render: function() {
+import React from 'react';
+
+export default class App extends React.Component {
+  render () {
     return (
       <div className="appHolder">
         <div className="body">
@@ -16,4 +16,4 @@ export default React.createClass({
       </div>
     );
   }
-})
+}

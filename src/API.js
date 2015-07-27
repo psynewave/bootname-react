@@ -1,18 +1,23 @@
 import ServerActionsCreator from "./actions/ServerActionsCreators"
 
 export default {
-  getAllResources() {
-    console.log('hello');
+  getEntry() {
+    $.get("http://bootname.herokuapp.com/entries/87519463-react-and-flux-getting-started-book")
+    .success( entry =>{
+      ServerActionsCreator.receiveEntry(entry);
+    })
+    .error(error =>{
+      console.error(error);
+    })
+  },
+  getNames() {
     $.get("http://bootname.herokuapp.com/entries/87519463-react-and-flux-getting-started-book/names")
     .success( resources => {
-      //create server action
-      //console.log('1. need action now');
-      console.log(resources);
-      //ServerActionsCreator.receiveResources(resources);
+      ServerActionsCreator.receiveResources(resources.names);
 
     })
     .error(error => {
-      console.log(error);
+      console.err(error);
     });
   },
   findResources(searchTerm) {

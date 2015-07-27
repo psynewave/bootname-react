@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-export default React.createClass({
-  render: function() {
+export default class Rewards extends React.Component {
+  render () {
     return (
       <div id="rewards">
           <div className="">
@@ -16,4 +16,4 @@ export default React.createClass({
       </div>
     );
   }
-});
+}

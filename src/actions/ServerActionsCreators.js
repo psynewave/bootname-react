@@ -7,7 +7,16 @@ export default {
 
     AppDispatcher.dispatch({
       actionType: Actions.RECEIVE_RESOURCES,
-      articles: payload
+      names: payload
+    });
+
+  },
+  receiveEntry (payload) {
+    //console.log("2 we are in the server here", payload);
+
+    AppDispatcher.dispatch({
+      actionType: Actions.RECEIVE_ENTRY,
+      entry: payload
     });
 
   },
