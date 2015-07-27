@@ -1,6 +1,6 @@
 var React = require('react');
 
-var Rewards = React.createClass({
+export default React.createClass({
   render: function() {
     return (
       <div id="rewards">
@@ -17,5 +17,3 @@ var Rewards = React.createClass({
     );
   }
 });
-
-module.exports = Rewards;

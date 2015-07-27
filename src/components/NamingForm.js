@@ -1,6 +1,6 @@
 var React = require('react');
 
-var NamingForm = React.createClass({
+export default React.createClass({
   render: function() {
     return (
       <div className="col-md-5">
@@ -27,5 +27,3 @@ var NamingForm = React.createClass({
     );
   }
 });
-
-module.exports = NamingForm;

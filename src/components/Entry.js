@@ -1,6 +1,6 @@
 var React = require('react');
 
-var Entry = React.createClass({
+export default React.createClass({
   render: function() {
     return (
       <div id="entry" className="col-md-7">
@@ -23,5 +23,3 @@ var Entry = React.createClass({
     );
   }
 });
-
-module.exports = Entry;
